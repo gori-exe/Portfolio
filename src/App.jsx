@@ -1,5 +1,5 @@
 import './App.css';
-import Nvbr from './components/nvbr';
+import nvbr from './components/nvbr';
 import Center from './components/Center';
 import Skillsect from './components/Skillsect'; 
 import Project from './components/Project';
