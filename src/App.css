@@ -1,0 +1,427 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+                         /* navbar */
+.nvbar{
+  background-color: rgb(239, 227, 227);
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+}
+
+ 
+.nvbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .nvbar ul li{
+  padding: 20px;
+} */
+.right3{
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+.nvbar ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  padding: 1rem 2rem;
+  display: block;
+  transition: background-color 0.3s;
+}
+.nvbar a:hover{
+  background-color: #f2ccccc9;
+  border-bottom: 3px solid grey;
+}
+
+               /* hero section */
+.hero{
+    margin:60px;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.hero h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e1e1ec9;
+    font-size: 120px;
+    width: 26vw;
+    margin-top: 20px;
+  }
+  .hero h1:hover{
+    border-bottom: 3px solid grey;
+  } 
+.hero p{
+    overflow: hidden;
+     max-width: 50vw;
+    font-family: 'Courier New', Courier, monospace;
+     font-size: 30px;
+     height: 500px;
+     margin-top: -2px;
+
+}
+.loop2{
+    margin-top: 30px;
+    padding: 8px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #865858c9;
+
+
+}
+.loop{
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+}
+                       /* about section */
+.img{
+  height: 400px;
+  width: 500px;
+}                       
+.img img{
+   width: 500px;
+   height: 400px;
+   background: cover;
+   border-radius: 50px;
+}        
+            
+                      /* skills section */
+.skills{
+    height: 90px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #ffb9b984;
+}
+.skills h1{
+    color: black;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+.lg{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: 90px;
+
+}
+.lg h1{
+    display: flex;
+    align-items: center;
+    margin-left:40px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #E34F26;
+}
+.rect img{
+    height: 200px;
+    width: 200px;
+}
+.rect-hed h1{
+  color :#61DAFB;
+}
+.rect li{
+    margin: 9px;
+    padding: 9px;
+    margin-left: 9px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+.css2 h1{
+    color: #264DE4;
+}
+.java2 h1{
+    color: #F7DF1E;
+}
+
+.html img{
+    height: 200px;
+    width: 200px;
+}
+.html li{
+    margin: 9px;
+    padding: 9px;
+    margin-left: 9px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.css img{
+    height: 180px;
+    width: 180px;
+}
+.css{
+  margin: 0 20px; 
+}
+.css li{
+    margin: 9px;
+    padding: 9px;
+    margin-left: 9px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+.javasc img{
+   height: 200px;
+   width: 200px;
+}
+.javasc li{
+   margin: 9px;
+   padding: 9px;
+   margin-left: 9px;
+   font-size: large;
+   font-family: 'Courier New', Courier, monospace;
+}
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 16px;
+  padding: 6px 20px;
+  border-radius: 17px;
+  height: 60px;
+}
+
+.skill-box {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a53232;
+}
+
+.skilsbr {
+  height: 8px;
+  width: 100%;
+  background-color: rgba(180, 89, 89, 0.941);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* All animated bars start at 0 width and 0 opacity */
+.skill-per,
+.skill-perr,
+.skill-perjj,
+.skill-rect {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  border-radius: 6px;
+}
+
+/* Skill bar colors */
+.skill-per {
+  background-color: #E34F26; /* HTML - orange */
+}
+
+.skill-perr {
+  background-color: #264DE4; /* CSS - blue */
+}
+
+.skill-perjj {
+  background-color: #F7DF1E; /* JS - yellow */
+}
+
+.skill-rect {
+  background-color: #61DAFB; /* React - cyan */
+}
+
+/* Tooltip styling */
+.tool-tip,
+.tool-tipp {
+  position: absolute;
+  top: -28px;
+  right: -14px;
+  font-weight: 500;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  z-index: 1;
+}
+.open{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 90px;
+/* background-color: #264DE4; */
+}
+.open a{
+  text-decoration: none;
+    margin-left: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+      /* projects */
+   
+.ojects-section {
+  
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 9px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 3em;
+  margin-top: 160px;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding-left: 20px;
+
+}
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-item {
+  border-left: 4px solid #333;
+  padding-left: 40px;
+  font-size: 20px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin-top: 30px;
+  
+}
+
+.project-description {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.project-tech {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.project-links a {
+  margin-right: 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+    
+.form-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  width: 900%;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-top: 130px;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1a1d22;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(171, 160, 160);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+
+.inst{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.inst img{
+    height: 40px;
+    width: 40px;
+    margin: 0 6px;
+    transition: transform 0.3s ease;
+}
+.inst img:hover{
+   transform: scale(1.2);
+   filter: brightness(1.2);
+}
+.git img{
+  height: 30px;
+  width: 30px;
+}
