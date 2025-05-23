@@ -98,7 +98,30 @@ body{
    background: cover;
    border-radius: 50px;
 }        
-            
+            @media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .loop {
+    justify-content: center;
+    font-size: 1.4rem;
+  }
+
+  .text h1 {
+    font-size: 2.2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .img {
+    margin-top: 2rem;
+  }
+}
                       /* skills section */
 .skills{
     height: 90px;
@@ -122,6 +145,15 @@ body{
     padding: 30px;
     margin-top: 90px;
 
+}
+.lg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.html:hover, .css:hover, .javasc:hover, .rect:hover {
+  transform: translateY(-5px);
 }
 .lg h1{
     display: flex;
@@ -246,6 +278,16 @@ body{
 
 .skill-rect {
   background-color: #61DAFB; /* React - cyan */
+}
+/* Responsive Text */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .tool-tip {
+    font-size: 0.7rem;
+  }
 }
 
 /* Tooltip styling */

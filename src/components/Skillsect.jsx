@@ -54,25 +54,14 @@ function Skillsect() {
   }, []);
 
   return (
-    <div ref={sectionRef}>
-      <div className="skills">
-        <h1 id='skills'>My skills</h1>
-      </div>
-      <div className="lg">
-
+    <div ref={sectionRef} className="skills-section">
+      <h1 className="skills-title">My Skills</h1>
+      <div className="skills-grid">
         {/* HTML Skill */}
-        <div className="html">
-          <img src={images} alt="HTML" />
-          <h1>Html skills</h1>
-          <div className="container">
-            <div className="skill-box">
-              <div className="skilsbr">
-                <span className='skill-per'>
-                  <span className='tool-tip'>90%</span>   
-                </span>
-              </div>
-            </div>
-          </div>
+        <div className="skill-item">
+          <img src={images} alt="HTML" className="skill-icon" />
+          <h2>HTML</h2>
+          <div className="skill-bar"><span className='skill-per'><span className='tool-tip'>90%</span></span></div>
           <ul>
             <li>Semantic and accessible HTML5 markup</li>
             <li>Proper use of tags and structure (headings, lists, tables, forms)</li>
@@ -83,19 +72,10 @@ function Skillsect() {
         </div>
 
         {/* CSS Skill */}
-        <div className="css">
-          <img src={skip} alt="CSS" />
-          <div className='css2'><h1>Css skills</h1></div>
-          <div>.</div>
-          <div className="container">
-            <div className="skill-box">
-              <div className="skilsbr">
-                <span className='skill-perr'>
-                  <span className='tool-tip'>70%</span>   
-                </span>
-              </div>
-            </div>
-          </div>
+        <div className="skill-item">
+          <img src={skip} alt="CSS" className="skill-icon" />
+          <h2>CSS</h2>
+          <div className="skill-bar"><span className='skill-perr'><span className='tool-tip'>70%</span></span></div>
           <ul>
             <li>Responsive design with Flexbox and Grid</li>
             <li>Media queries and mobile-first development</li>
@@ -106,18 +86,10 @@ function Skillsect() {
         </div>
 
         {/* JavaScript Skill */}
-        <div className="javasc">
-          <img src={javascript} alt="JavaScript" />
-          <div className='java2'><h1>JavaScript</h1></div>
-          <div className="container">
-            <div className="skill-box">
-              <div className="skilsbr">
-                <span className='skill-perjj'>
-                  <span className='tool-tip'>60%</span>   
-                </span>
-              </div>
-            </div>
-          </div>
+        <div className="skill-item">
+          <img src={javascript} alt="JavaScript" className="skill-icon" />
+          <h2>JavaScript</h2>
+          <div className="skill-bar"><span className='skill-perjj'><span className='tool-tip'>60%</span></span></div>
           <ul>
             <li>Component-based architecture</li>
             <li>useState and basic hooks</li>
@@ -128,18 +100,10 @@ function Skillsect() {
         </div>
 
         {/* React Skill */}
-        <div className="rect">
-          <img src={Recticon} alt="React" />
-          <div className='rect-hed'><h1>React.js</h1></div>
-          <div className="container">
-            <div className="skill-box">
-              <div className="skilsbr">
-                <span className='skill-rect'>
-                  <span className='tool-tip'>30%</span>   
-                </span>
-              </div>
-            </div>
-          </div>
+        <div className="skill-item">
+          <img src={Recticon} alt="React" className="skill-icon" />
+          <h2>React.js</h2>
+          <div className="skill-bar"><span className='skill-rect'><span className='tool-tip'>30%</span></span></div>
           <ul>
             <li>Learning the basics of React and how component-based architecture works.</li>
             <li>useState and basic hooks</li>
@@ -154,5 +118,3 @@ function Skillsect() {
 }
 
 export default Skillsect;
-
-

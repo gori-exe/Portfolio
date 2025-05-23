@@ -5,7 +5,7 @@ import Skillsect from './components/Skillsect';
 import Project from './components/Project';
 import Form from './components/Form';
 import Footer from './components/Footer';
-
+import Nvbr from './components/Nvbr.css';
 function App() {
   return (
     <div>
